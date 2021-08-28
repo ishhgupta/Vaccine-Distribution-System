@@ -96,7 +96,7 @@ void distributing_vacc(company *comp)
         // busy waiting
     }
     cyan(); printf("All the vaccines prepared by Pharmaceutical Company %d are emptied.Resuming Production Now.\n",comp->id);
-    // return NULL;
+    
 }
 
 void* prep_vaccine(void *args)
@@ -124,7 +124,7 @@ void* students_coming(void *args)
     student *stud = (student *)args;
     while(1)
     {
-        // if(students[].)
+        
         if(stud_rem > 0 && students[stud->id].ifvaccined ==0 && students[stud->id].vaccinationno<3)
         {
             blue(); printf("Student %d has arrived for %d round of Vaccination\n",stud->id,stud->vaccinationno);
